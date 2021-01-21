@@ -32,3 +32,8 @@ Then open your favorite browser and type this (as shown above, the container por
     http://localhost:9000
 ```
 
+Finally, run the `scan-your-project.sh` project passing the project name as first argument and your token as the second one:
+
+``` bash
+    ./scan-your-project.sh <YOUR-PROJECT-NAME-HERE> <YOUR-USER-TOKEN-HERE>
+```
