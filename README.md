@@ -45,7 +45,7 @@ then you need to create a new project that will be scanned by sonar, at this ste
 after that, click on `Set Up` and Generate a new token giving it a name (it can be the project name too). Now, copy the generated token (you're gonna use it to login), then click on `Continue`.
 
 
-Finally, copy (runsettings)[https://github.com/luizhlelis/csharp-local-sonar/blob/main/runsettings.xml] (if you don't already have one) and (scan-your-project)[https://github.com/luizhlelis/csharp-local-sonar/blob/main/scan-your-project.sh] to the solution root folder. Run the `scan-your-project.sh` passing the project name as first argument and your token as the second one:
+Finally, copy [runsetting](https://github.com/luizhlelis/csharp-local-sonar/blob/main/runsettings.xml) (if you don't already have one) and [scan-your-project](https://github.com/luizhlelis/csharp-local-sonar/blob/main/scan-your-project.sh) to the solution root folder. Run the `scan-your-project.sh` passing the project name as first argument and your token as the second one:
 
 ``` bash
     ./scan-your-project.sh <YOUR-PROJECT-NAME-HERE> <YOUR-USER-TOKEN-HERE>
