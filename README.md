@@ -42,11 +42,13 @@ then you need to create a new project that will be scanned by sonar, at this ste
 - Project Key: `<YOUR-PROJECT-NAME-HERE>`
 - Display name: `<YOUR-PROJECT-NAME-HERE>`
 
-Now click on Set Up. Generate a new token but first give it a name, like `crosscutting-token` and accept that. Copy the generated token! We're gonna use it as a way to login, my case it was `5bf069e22d96da382d8e41f04ef93919ba454133`, now click on Continue.
+after that, click on `Set Up` and Generate a new token giving it a name (it can be the project name too). Now, copy the generated token (you're gonna use it to login), then click on `Continue`.
 
 
-Finally, run the `scan-your-project.sh` project passing the project name as first argument and your token as the second one:
+Finally, copy (runsettings)[https://github.com/luizhlelis/csharp-local-sonar/blob/main/runsettings.xml] (if you don't already have one) and (scan-your-project)[https://github.com/luizhlelis/csharp-local-sonar/blob/main/scan-your-project.sh] to the solution root folder. Run the `scan-your-project.sh` passing the project name as first argument and your token as the second one:
 
 ``` bash
     ./scan-your-project.sh <YOUR-PROJECT-NAME-HERE> <YOUR-USER-TOKEN-HERE>
 ```
+
+the command above will run all of that you need to get the sonar metrics, after that all you need to do is refresh the `browser tab` and enjoy your coverage and code smells (or the lack of them).
